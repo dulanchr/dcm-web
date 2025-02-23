@@ -37,6 +37,7 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic);
 @import url(https://fonts.googleapis.com/css?family=Heebo:400,300,500);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -45,6 +46,7 @@ html {
 
 body {
   margin: 0;
+
 }
 
 article,
@@ -1408,20 +1410,18 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: #fff;
+  background-color: #f74b4b;
 }
 
 input,
 button,
 select,
 textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  font-family: "DM Sans", serif;
 }
 
 a {
@@ -1507,11 +1507,27 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+.h1, .h2, .h3, .h5, .h6 {
+  font-family: "DM Sans", serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
+}
+.mainpara{
+  font-family: "DM Sans", serif;
+  font-weight: 300;
+  line-height: 1.1;
+  font-size: 15px;
+  margin-top: 75px;
+  color: #5b5b5b ;
+}
+
+.h4 {
+  font-family: "DM Sans", serif;
+  font-weight: 500;
+  line-height: 0.5;
+  margin-bottom: 100px;
+  color: #474747 ;
 }
 
 h1 small,
@@ -1552,7 +1568,7 @@ h3 .small, .h3 small,
   font-size: 65%;
 }
 
-h4, .h4,
+h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 10px;
@@ -1906,7 +1922,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "DM Sans", serif;
 }
 
 code {
@@ -4951,7 +4967,39 @@ tbody.collapse.in {
 }
 
 .navbar-brand > img {
+  
   display: block;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  cursor: pointer;
+}
+
+.video-container img {
+  width: 100%;
+  display: block;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 450px; /* Adjust as needed */
+  display: none;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px 20px;
+  font-size: 24px;
+  border-radius: 50%;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -6902,7 +6950,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7036,7 +7084,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -16659,11 +16707,11 @@ body.no-lines .l1, body.no-lines .l2, body.no-lines .l3 {
 */
 body {
   color: #000;
-  font-family: "Heebo", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "DM Sans", serif;
 }
 
 h1, h2, h3, h4 {
-  font-family: "Playfair Display", "Times New Roman", serif;
+  font-family: "DM Sans", serif;
 }
 
 h1.underline:after, h2.underline:after, h3.underline:after, h4.underline:after {

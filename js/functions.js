@@ -11,8 +11,8 @@
 
   $('.smooth-transition').animsition({
     linkElement: '.smooth',
-    inDuration: 500,
-    outDuration: 500,
+    inDuration: 1000,
+    outDuration: 50,
   });
 
   $('html').on('click', function(e){
